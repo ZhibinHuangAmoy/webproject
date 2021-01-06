@@ -1,0 +1,15 @@
+package com.huang.dao;
+
+import com.huang.pojo.News;
+
+import java.util.List;
+
+public interface NewsMapper {
+    int addNews(News news);
+    int deleteNews(int id);
+    int updateNews(News news);
+    News queryNewsById(int id);
+    List<News> queryAllNews();
+    News queryNewsByTitle(String title);
+
+}
